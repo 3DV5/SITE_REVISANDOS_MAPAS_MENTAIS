@@ -1,0 +1,314 @@
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 400vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+}
+
+.CONT-CENTER {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 217, 255);
+    border-radius: 60px;
+}
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+.T2, .T3, .T4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Chivo Mono, monospace;
+    font-size: 28px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ffffff, #27fff4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-top: 100px;
+}
+
+.menu {
+    /*ESSE DISPLAY,JUSTI,ALIGN,FLEZ-WRAP DEIXA TUDO RESPONSIVO*/
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(2,0,36);
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 38px;
+    padding-left: 1px;
+    box-shadow: 20px 20px 15px;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+
+}
+
+ul {
+    font-family: Chivo Mono, monospace;
+    display: flex;
+    gap: 8px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 8px;
+    transition: 0.5s ease-in;
+}
+
+ul:hover li a {
+    color: #30edf4;
+}
+
+ul:hover li a:not(:hover) {
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+p {
+    color: #00eeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: OCR A Std, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.CORU  img {
+    max-width: 150px;
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    filter: drop-shadow(10px 8px 10px #000000);
+    transition: transform 500ms ease-in-out;
+}
+
+.CORU:hover img {
+    transform: scale(1.1);
+}
+
+.slide-1 {
+    margin-top: 35px;
+}
+
+.MPMENT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    border-radius: 30px;
+}
+
+.MPMENT img {
+    max-width: 75%;
+    object-fit: cover;
+    transition: transform 500ms ease-in-out;
+    border-radius: 30px;
+    box-shadow: 20px 20px 15px;
+}
+
+.MPMENT:hover img {
+    transform: scale(1.1);
+}
+
+.PF {
+    font-size: 15px;
+}
+
+/*daqui pra baixo é a section de contato*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #cc39a4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+
